@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage-Maker</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="camera.css"> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- <script src="./html2canvas.js" type="text/javascript"></script>  -->
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="tools hide disable">
+            <div class="heading">Tools</div>
+            <div class="container-one">
+                <div class="child">
+                    <!-- <div class="zoom-in tool"> <i class="fas fa-search-plus"></i> </div>
+                    <div class="zoome-out tool"> <i class="fas fa-search-minus"></i> </div> -->
+                    <div class="slider-container">
+                    <input type="range" id="border-size" min="1" max="25" value="1" class="slider tool">
+                    <input type="range" id="border-radius" min="1" max="50" value="1" class="slider tool">
+                </div>
+                    <div class="filters">
+                        <div class="red tool"> <img src="./img/red.png" alt="" height="100px" width="150px"> </div>
+                        <div class="blue tool"> <img src="./img/blue.png" alt="" height="100px" width="150px"> </div>
+                        <div class="green tool"> <img src="./img/green.png" alt="" height="100px" width="150px"> </div>
+                        <div class="yellow tool"> <img src="./img/yellow.png" alt="" height="100px" width="150px"> </div>
+                        <div class="black tool"> <img src="./img/black.png" alt="" height="100px" width="150px"> </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="child">
+                    <div class="pen tool"> <i class="fas fa-pen"></i> </div>
+                    <div class="eraser tool"> <i class="fas fa-eraser"></i> </div>
+                    <!-- <div class="undo tool"> <i class="fas fa-undo-alt"></i> </div>
+                    <div class="redo tool"> <i class="fas fa-redo-alt"></i> </div> -->
+                   
+                    <div class="stickers">
+
+                       <div class="heart tool"> <i class="fas fa-heart"></i> </div>
+                        <div class="tired tool"> <i class="fas fa-tired"></i> </div>
+                        <div class="sad tool"> <i class="fas fa-sad-tear"></i> </div>
+                        <div class="angry tool"> <i class="fas fa-angry"></i> </div>
+                        <div class="dizzy tool"> <i class="fas fa-dizzy"></i> </div>
+                        <div class="love tool"> <i class="fas fa-grin-hearts"></i> </div>
+                        <div class="funny tool"> <i class="fas fa-grin-tongue"></i> </div>
+                        <div class="laugh tool"> <i class="fas fa-laugh-beam"></i> </div>
+                        <div class="wink tool"> <i class="fas fa-smile-wink"></i> </div>
+                        <div class="meh tool"> <i class="fas fa-meh"></i> </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="layouts">
+            <div class="heading">Layouts</div>
+            <div class="rows">
+                <div class="row">
+                    <img src="./img/horizontal_2.png" alt="" dir="horizontal" number="2">
+                </div>
+                <div class="row">
+                    <img src="./img/vertical_2.png" alt="" dir="vertical" number="2">
+                </div>
+                <div class="row">
+                    <img src="./img/horizontal_3.png" alt="" dir="horizontal" number="3">
+                </div>
+                <div class="row">
+                    <img src="./img/vertical_3.png" alt="" dir="vertical" number="3">
+                </div>
+                <div class="row">
+                    <img src="./img/horizontal_4.png" alt="" dir="horizontal" number="4">
+                </div>
+                <div class="row">
+                    <img src="./img/vertical_4.png" alt="" dir="vertical" number="4">
+                </div>
+               
+            </div>
+        </div> 
+        
+        <div class="space">
+            <div class="options">
+                <div class="faq"> <i class="far fa-question-circle"></i> </div>
+                <div class="back hide"><i class="far fa-arrow-alt-circle-left"></i></div>
+                <div class="save"><i class="far fa-save"></i></div>
+            </div>
+            <div class="container-two"></div>
+            <div class="my-gallery"> <i class="far fa-images"> </i></div>
+        </div>
+
+
+    </div>
+
+
+    <script src="./db.js"></script>
+    <script src="./script.js"></script>
+    <script src="./camera.js"></script>
+    <script src="./collage.js"></script>
+    <script src="./whiteboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./html2canvas.js" type="text/javascript"></script>
+    <script src="./save.js"></script>
+</body>
+</html>

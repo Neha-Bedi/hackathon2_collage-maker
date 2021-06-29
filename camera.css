@@ -1,0 +1,129 @@
+* {
+    box-sizing : border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.video-container {
+    background: black;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+}
+
+.back-cam{
+    position: absolute;
+    /* background: white; */
+    top: 10px;
+    left: 10px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.media-controls{
+
+align-items: center;
+
+top: 21%;
+
+right: 30px;
+
+position: absolute;
+
+flex-direction: column;
+
+/* flex-wrap: wrap; */
+
+/* height: 100px !important; */
+
+width: 80px;
+
+border-radius: 0 !important;
+
+border: none !important;
+
+justify-content: space-evenly;
+}
+
+
+.media-controls>div{
+
+background: white;
+
+height: 60px;
+
+width: 60px;
+
+border-radius: 5px;
+
+text-align: center;
+
+font-size: 47px;
+
+font-weight: bold;
+
+cursor: pointer;
+
+margin: 10px;
+
+opacity: 0.8;
+}
+
+#in{
+
+}
+
+#capture-photo{
+
+/* border: 2px solid white; */
+
+/* height: 80px !important; */
+
+/* width: 80px; */
+
+border-radius: 50%;
+
+background: none;
+}
+
+
+
+
+#out{
+
+}
+
+/* .fa-camera-retro{
+    font-size: 3.7rem;
+    color: white;
+} */
+
+.fa-arrow-alt-circle-left, .fa-camera-retro{
+    font-size: 3.7rem;
+    color: white;
+
+}
+
+.media-controls>div:hover , .back-cam:hover{
+    opacity: 1;
+}
+
+.cam{
+
+position: absolute;
+
+height: 50vh;
+
+width: 50vw;
+
+top: 30vh;
+
+left: 10vw;
+
+/* left: 0vw; */
+}
