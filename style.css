@@ -254,6 +254,7 @@
     justify-content: center;
     height: 95%;
     width: 100%;
+    background: black;
 }
 
 .my-gallery {
@@ -264,7 +265,7 @@
 }
 
 .my-gallery:hover {
-    color: #245195;
+    color: #3498db;
     transform: scale(1.15);
 }
 
@@ -311,6 +312,7 @@ left: 50px; */
     font-size: 2rem;
     position: absolute;
     z-index: 10;
+    color: white;
 }
 
 .hide {
@@ -335,13 +337,6 @@ left: 50px; */
     z-index: 10;
 }
 
-.sticky {
-    /* position: absolute;
-    top: 100px;
-    left:100px;
-    z-index: 100; */
-}
-
 .modal {
     display: flex;
     background: #245195;
@@ -354,7 +349,7 @@ left: 50px; */
     justify-content: space-around;
     flex-wrap: wrap;
     z-index: 15;
-    box-shadow: 10px 10px 20px #245195;
+    box-shadow: 5px 5px 15px #245195;
 }
 
 .modal>div {
@@ -478,4 +473,14 @@ canvas {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.sticky{
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    left: 100px;
+}
+body{
+    position: relative;
 }

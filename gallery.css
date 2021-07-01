@@ -10,7 +10,7 @@ position: relative;
 
 .heading{
 
-color: white;
+color: #f6e58d;
 
 position: absolute;
 
@@ -29,7 +29,7 @@ font-size: 4rem;
 
 .back-btn{
     position: absolute;
-    color: white;
+    color: #133F8C;
     /* height: 70px; */
     /* width: 70px; */
     /* border-radius: 50px; */
@@ -44,8 +44,8 @@ font-size: 4rem;
 }
 
 .back-btn:hover{
-    transform: scale(1.2);
-    
+    transform: scale(1.15);
+    color: #3498db;
 }
 
 .gallery {
@@ -81,7 +81,7 @@ img {
 .gallery-item:hover{
     filter: grayscale(0);
     transform: scale(1.1);
-    box-shadow: 10px 10px 20px #D980FA;
+    box-shadow: 10px 10px 20px #f6e58d;
 }
 
 .media-buttons {

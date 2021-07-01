@@ -10,8 +10,8 @@ let saveBtn = document.querySelector(".save");
 
 
 $(saveBtn).on('click', function () {
-	// let wbCanvas = document.querySelector("canvas");
-	// let ctx = wbCanvas.getContext("2d");
+	//ss
+	//draw on canvas , take height width using getboundingclientrect
 	let collage = document.querySelector(".collage");
 	for (let j = 0; j < cross.length; j++) {
 		cross[j].classList.add("hide");

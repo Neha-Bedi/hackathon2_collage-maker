@@ -132,12 +132,13 @@ function whiteboard(n) {
         str += `"></i>`
 
         sticky.innerHTML = str;
-        collage.append(sticky);
+        document.querySelector("body").append(sticky);
 
         let initialX;
         let initialY;
         let isStickyHold = false;
         sticky.addEventListener("mousedown", function (e) {
+            console.log("md");
             let x = e.clientX;
             let y = e.clientY;
             initialX = x;
@@ -145,6 +146,7 @@ function whiteboard(n) {
             isStickyHold = true;
         });
         sticky.addEventListener("mousemove", function (e) {
+            console.log("mm");
             if (isStickyHold) {
                 let finalX = e.clientX;
                 let finalY = e.clientY;
@@ -162,6 +164,7 @@ function whiteboard(n) {
 
         });
         sticky.addEventListener("mouseup", function(e){
+            console.log("mu");
             isStickyHold = false;
         });
         // stickyPad.addEventListener("mousemove", handleMouseMove);
@@ -218,7 +221,7 @@ function whiteboard(n) {
     let borderRadius = document.querySelector("#border-radius");
 
     borderSize.addEventListener("change", function (e) {
-        collage.style.border = `${e.target.value}px solid black`;
+        collage.style.border = `${e.target.value}px solid white`;
     })
 
     borderRadius.addEventListener("change", function (e) {
